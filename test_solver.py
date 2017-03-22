@@ -19,3 +19,10 @@ class TestSolver(TestCase):
 
         self.assertEquals(3, c.numeroElementos("1,38,7"))
         self.assertEquals(4, c.numeroElementos("   3 ,   5   , 54  , 22  "))
+
+
+    def test_demo_2(self):
+
+        c = Calculadora()
+
+        self.assertEquals( (0, 0), c.numeroElementosYMinimo(""))
