@@ -30,3 +30,8 @@ class Calculadora:
                 arregloSalida.append(int(i.strip()))
                 
             return (numeroElementos, min(arregloSalida), max(arregloSalida))
+
+    def numeroElementosMinimoMaximoYPromedio(self, arreglo):
+        numeroElementos = self.numeroElementos(arreglo)
+        if numeroElementos == 0:
+            return (0, 0, 0, 0)
