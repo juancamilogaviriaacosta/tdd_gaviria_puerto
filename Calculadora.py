@@ -7,4 +7,4 @@ class Calculadora:
         if arreglo is None or len(arreglo.strip()) == 0:
             return 0
         else:
-            return len(arreglo.strip())
+            return len(arreglo.split(','))
