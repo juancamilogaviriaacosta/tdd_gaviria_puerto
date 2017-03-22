@@ -10,7 +10,11 @@ class Calculadora:
 
     def numeroElementosYMinimo(self, arreglo):
         numeroElementos = self.numeroElementos(arreglo)
+        arregloSalida = []
         if numeroElementos == 0:
             return (0,0)
         else:
-            return numeroElementos, int(min(arreglo.strip().split(',')))
+            for i in arreglo.split(','):
+                arregloSalida.append(int(i.strip()))
+
+            return numeroElementos, min(arregloSalida)
