@@ -40,4 +40,4 @@ class Calculadora:
             for i in arreglo.split(','):
                 arregloSalida.append(int(i.strip()))
 
-            return (numeroElementos, min(arregloSalida), max(arregloSalida), (sum(arregloSalida)/ float(len(arregloSalida))))
+            return (numeroElementos, min(arregloSalida), max(arregloSalida), (sum(arregloSalida)/ len(arregloSalida)))

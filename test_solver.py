@@ -65,3 +65,6 @@ class TestSolver(TestCase):
 
         self.assertEquals((1, 7, 7, 7), c.numeroElementosMinimoMaximoYPromedio(" 7"))
 
+        self.assertEquals((2, 7, 67, 37), c.numeroElementosMinimoMaximoYPromedio(" 7, 67"))
+
+
