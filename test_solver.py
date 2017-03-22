@@ -46,3 +46,6 @@ class TestSolver(TestCase):
 
         self.assertEquals((1, 1, 1), c.numeroElementosMinimoYMaximo("1"))
         self.assertEquals((1, 5, 5), c.numeroElementosMinimoYMaximo("5   "))
+
+        self.assertEquals((4, 2, 978), c.numeroElementosMinimoYMaximo("2,86, 978, 4"))
+        self.assertEquals((4, 5, 754), c.numeroElementosMinimoYMaximo("5  , 43 ,      100,   754"))
