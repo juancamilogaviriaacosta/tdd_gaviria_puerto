@@ -3,6 +3,12 @@ from Calculadora import Calculadora
 
 class TestSolver(TestCase):
 
+    def main_test(self):
+        self.test_demo()
+        self.test_demo_2()
+        self.test_demo_3()
+        self.test_demo_4()
+
     def test_demo(self):
 
         c = Calculadora()
@@ -49,3 +55,10 @@ class TestSolver(TestCase):
 
         self.assertEquals((4, 2, 978), c.numeroElementosMinimoYMaximo("2,86, 978, 4"))
         self.assertEquals((4, 5, 754), c.numeroElementosMinimoYMaximo("5  , 43 ,      100,   754"))
+
+
+    def test_demo_4(self):
+
+        c = Calculadora()
+        self.assertEquals((0, 0, 0, 0), c.numeroElementosMinimoMaximoYPromedio(""))
+
