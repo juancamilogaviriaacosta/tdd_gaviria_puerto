@@ -16,3 +16,6 @@ class TestSolver(TestCase):
 
         self.assertEquals(2, c.numeroElementos("1,38"))
         self.assertEquals(2, c.numeroElementos("   3 ,   5   "))
+
+        self.assertEquals(3, c.numeroElementos("1,38,7"))
+        self.assertEquals(4, c.numeroElementos("   3 ,   5   , 54  , 22  "))
