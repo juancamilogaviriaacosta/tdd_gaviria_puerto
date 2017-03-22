@@ -60,5 +60,8 @@ class TestSolver(TestCase):
     def test_demo_4(self):
 
         c = Calculadora()
+
         self.assertEquals((0, 0, 0, 0), c.numeroElementosMinimoMaximoYPromedio(""))
+
+        self.assertEquals((1, 7, 7, 7), c.numeroElementosMinimoMaximoYPromedio(" 7"))
 
