@@ -43,4 +43,4 @@ class TestSolver(TestCase):
 
         c = Calculadora()
 
-        self.assertEquals((0, 0, 0), c.numeroElementosYMaximo(""))
+        self.assertEquals((0, 0, 0), c.numeroElementosMinimoYMaximo(""))

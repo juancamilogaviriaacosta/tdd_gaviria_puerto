@@ -18,3 +18,10 @@ class Calculadora:
                 arregloSalida.append(int(i.strip()))
 
             return numeroElementos, min(arregloSalida)
+
+
+    def numeroElementosMinimoYMaximo(self, arreglo):
+        numeroElementos = self.numeroElementos(arreglo)
+        arregloSalida = []
+        if numeroElementos == 0:
+            return (0, 0, 0)
