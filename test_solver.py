@@ -36,3 +36,11 @@ class TestSolver(TestCase):
 
         self.assertEquals((4, 2), c.numeroElementosYMinimo("2,86, 978, 4"))
         self.assertEquals((4, 5), c.numeroElementosYMinimo("5  , 43 ,      100,   754"))
+
+
+
+    def test_demo_3(self):
+
+        c = Calculadora()
+
+        self.assertEquals((0, 0, 0), c.numeroElementosYMaximo(""))
