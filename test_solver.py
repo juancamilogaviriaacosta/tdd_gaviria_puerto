@@ -13,3 +13,6 @@ class TestSolver(TestCase):
 
         self.assertEquals(1, c.numeroElementos("1"))
         self.assertEquals(1, c.numeroElementos("   3 "))
+
+        self.assertEquals(2, c.numeroElementos("1,2"))
+        self.assertEquals(2, c.numeroElementos("   3 ,   5   "))
