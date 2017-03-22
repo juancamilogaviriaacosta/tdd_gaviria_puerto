@@ -30,3 +30,6 @@ class TestSolver(TestCase):
 
         self.assertEquals((1, 1), c.numeroElementosYMinimo("1"))
         self.assertEquals((1, 5), c.numeroElementosYMinimo("5   "))
+
+        self.assertEquals((2, 1), c.numeroElementosYMinimo("1,86"))
+        self.assertEquals((2, 3), c.numeroElementosYMinimo("5  , 3 "))
