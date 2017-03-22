@@ -33,5 +33,11 @@ class Calculadora:
 
     def numeroElementosMinimoMaximoYPromedio(self, arreglo):
         numeroElementos = self.numeroElementos(arreglo)
+        arregloSalida = []
         if numeroElementos == 0:
             return (0, 0, 0, 0)
+        else:
+            for i in arreglo.split(','):
+                arregloSalida.append(int(i.strip()))
+
+            return (numeroElementos, min(arregloSalida), max(arregloSalida), (sum(arregloSalida)/ float(len(arregloSalida))))
