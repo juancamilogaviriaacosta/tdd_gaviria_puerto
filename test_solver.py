@@ -9,3 +9,7 @@ class TestSolver(TestCase):
 
         self.assertEquals(0, c.numeroElementos(None))
         self.assertEquals(0, c.numeroElementos(""))
+        self.assertEquals(0, c.numeroElementos(" "))
+
+        self.assertEquals(1, c.numeroElementos("1"))
+        self.assertEquals(1, c.numeroElementos("   3 "))
