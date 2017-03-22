@@ -26,3 +26,7 @@ class TestSolver(TestCase):
         c = Calculadora()
 
         self.assertEquals( (0, 0), c.numeroElementosYMinimo(""))
+
+
+        self.assertEquals((1, 1), c.numeroElementosYMinimo("1"))
+        self.assertEquals((1, 5), c.numeroElementosYMinimo("5   "))
